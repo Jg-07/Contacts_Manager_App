@@ -33,7 +33,7 @@ class AddContacts extends React.Component {
                     <div class='Email'>
                         <h2>Email ID</h2>
                         <input
-                            type="text"
+                            type="email"
                             placeholder="Email"
                             class='input'
                             value={this.state.email}
