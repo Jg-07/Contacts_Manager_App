@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+
+.Head{
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  margin: 8%;
+  margin-top: 5%;
+  margin-bottom: 0px;
+  background-color: #6200EE;
+  border-radius: 0.5rem;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  align-items: center;
+}
+
+.Htxt{
+  font-size: xx-large;
+  color: rgb(255, 255, 255);
+  font-family: Comfortaa;
+}
+
+.AddContact{
+  font-family: Comfortaa;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  margin: 8%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: #3700B3;
+  color: rgb(253, 199, 255);
+  border-radius: 0.5rem;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  gap: 2rem;
+}
+
+.AddContact h1{
+  color: rgb(253, 199, 255);
+}
+
+.Uinput{
+  display: flex;
+}
+
+.input{
+  height: 4vh;
+  width: 20vw;
+  font-family: Comfortaa;
+  background-color: rgb(253, 199, 255);
+  padding: 2%;
+  border-radius: 0.5rem;
+  border:none;
+}
+
+.Name, .Email{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 4%;
+}
+
+.button{
+  width: 10vw;
+  background-color:#6200EE;
+  border-radius: 0.5rem;
+  font-family: Comfortaa;
+  color: #ffffff;
+  box-shadow: 4px 4px 1px 0px rgba(0, 0, 0, 0.2);
+  font-size: xx-large;
+  border: none;
+}
+
+.button:active{
+  box-shadow: none;
+}
+
+.contactList{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card{
+  margin: 8%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding: 2%;
+  background-color: #3700B3;
+  display: flex;
+  align-items: center;
+  color: rgb(253, 199, 255);
+  justify-content: space-around;
+  font-family: Comfortaa;
+  border-radius: 0.5rem;
+  box-shadow: 4px 5px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.card img{
+  width: 4.5vw;
+}
+
+.card small{
+  opacity: 0.7;
+}
+
+.contactList{
+  margin-top: 1%;
+}
+
+.data{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 2%;
+}
+
+.detail{
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width:800px) {
+  .AddContact{
+    flex-direction: column;
+    gap: 5vh;
+    padding: 5%;
+  }
+  .button{
+    padding: 3%;
+    width: 100%;
+  }
+  .Name, .Email{
+    flex-direction: column;
+    font-size: small;
+    gap: 1vh;
+    align-items: flex-start;
+  }
+  .input{
+    border-radius: 0.4rem;
+    padding-right: 0%;
+    width: 99%;
+  }
+  .card{
+    padding: 5%;
+    margin: 8%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .card img{
+    width: 8vw;
+  }
+  .Head{
+    margin-top: 8%;
+  }
+  .Uinput{
+    flex-direction: column;
+    gap: 5vh;
+  }
+}
