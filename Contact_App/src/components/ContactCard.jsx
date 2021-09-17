@@ -14,7 +14,9 @@ const ContactCard = (props) => {
                     <small>{email}</small>
                 </div>
             </div>
-            <img src={bin} alt="" />
+            <img src={bin} alt="" onClick={() => {
+                props.removeCard(id);
+            }} />
         </div>
     )
 }
